@@ -2,11 +2,11 @@ import { Translations } from "@/types/translations";
 
 export const translations: Translations = {
   en: {
-    profileScreen: "Discover",
-    discoverScreen: "Profile",
+    discoverScreen: "Descover",
+    profileScreen: "Profile",
   },
   es: {
-    profileScreen: "Descubrir",
-    discoverScreen: "Perfil",
+    discoverScreen: "Descrubre",
+    profileScreen: "Perfil",
   },
 };
