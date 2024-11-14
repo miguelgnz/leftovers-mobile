@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import { TabBarIcon } from "@/components/navigation/tab-bar-icon";
 import { Colors } from "@/constants/colors";
 import { useColorScheme } from "@/hooks/common/useColorScheme";
+import { i18n } from "@/locale/localization";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme() ?? "light";
@@ -16,7 +17,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="(discover)"
         options={{
-          title: "Discover",
+          title: i18n.t("discoverScreen"),
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "home" : "home-outline"}
@@ -28,7 +29,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="(profile)"
         options={{
-          title: "Profile",
+          title: i18n.t("profileScreen"),
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "body" : "body-outline"}
