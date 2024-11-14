@@ -1,16 +1,9 @@
-import { ThemedText } from "@/components/common/themed-text";
-import { ThemedView } from "@/components/common/themed-view";
+import { View, Text } from "react-native";
 
 export default function Home() {
   return (
-    <ThemedView
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <ThemedText>Edit app/index.tsx to edit this screen.</ThemedText>
-    </ThemedView>
+    <View className="flex-1 justify-center items-center">
+      <Text>Edit app/index.tsx to edit this screen.</Text>
+    </View>
   );
 }
