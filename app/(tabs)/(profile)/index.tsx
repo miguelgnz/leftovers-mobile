@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { ThemedText } from "@/components/common/themed-text";
 import { ThemedView } from "@/components/common/themed-view";
 
-export default function MoreScreen() {
+export default function ProfileScreen() {
   return (
     <ThemedView style={styles.container}>
       <ThemedText>Profile layout</ThemedText>
