@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import { TabBarIcon } from "@/components/navigation/tab-bar-icon";
-import { Colors } from "@/constants/colors";
+import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "react-native";
 import { i18n } from "@/locale/localization";
 
