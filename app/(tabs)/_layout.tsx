@@ -2,7 +2,6 @@ import { Tabs } from "expo-router";
 import { TabBarIcon } from "@/components/navigation/tab-bar-icon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "react-native";
-import { i18n } from "@/locale/localization";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme() ?? "light";
@@ -17,7 +16,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="(discover)"
         options={{
-          title: i18n.t("discoverScreen"),
+          title: "discoverScreen",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "home" : "home-outline"}
@@ -29,7 +28,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="(profile)"
         options={{
-          title: i18n.t("profileScreen"),
+          title: "profileScreen",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "body" : "body-outline"}
