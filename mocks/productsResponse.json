@@ -1,0 +1,42 @@
+{
+  "name": "Surprise bag",
+  "description": "Surprise bag of Chinese food",
+  "rating": 4,
+  "pickupStart": "2022-03-01T10:00:00.000Z",
+  "pickupEnd": "2022-03-01T12:00:00.000Z",
+  "price": 10,
+  "originalPrice": 15,
+  "quantity": 5,
+  "store": {
+    "id": 1,
+    "name": "ALDI - Mount Gravatt",
+    "categories": [
+      {
+        "id": 1,
+        "name": "Groceries"
+      },
+      {
+        "id": 2,
+        "name": "Food"
+      }
+    ]
+  },
+  "reviews": {
+    "total": 118,
+    "average": 4,
+    "highlights": [
+      {
+        "id": 1,
+        "comment": "Friendly staff"
+      },
+      {
+        "id": 2,
+        "comment": "Great value"
+      },
+      {
+        "id": 3,
+        "comment": "Good quality"
+      }
+    ]
+  }
+}

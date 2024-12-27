@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "name": "Recommended for you",
+    "products": [
+      {
+        "id": 1,
+        "name": "Surprise bag",
+        "image": "https://picsum.photos/200/300",
+        "pickupStart": "2022-03-01T10:00:00.000Z",
+        "pickupEnd": "2022-03-01T12:00:00.000Z",
+        "price": 10,
+        "originalPrice": 15,
+        "quantity": 5,
+        "distance": 1.2,
+        "favorite": true,
+        "store": {
+          "id": 1,
+          "name": "ALDI - Mount Gravatt"
+        },
+        "reviews": {
+          "total": 118,
+          "average": 4
+        }
+      },
+      {
+        "id": 2,
+        "name": "Surprise bag",
+        "image": "https://picsum.photos/seed/picsum/200/300",
+        "pickupStart": "2022-03-01T10:00:00.000Z",
+        "pickupEnd": "2022-03-01T12:00:00.000Z",
+        "price": 10,
+        "originalPrice": 15,
+        "quantity": 5,
+        "distance": 1.2,
+        "favorite": true,
+        "store": {
+          "id": 2,
+          "name": "Chinea Queen"
+        },
+        "reviews": {
+          "total": 118,
+          "average": 4.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Save before it's gone",
+    "products": [
+      {
+        "id": 2,
+        "name": "Surprise bag",
+        "image": "https://picsum.photos/id/42/200/300",
+        "pickupStart": "2022-03-01T10:00:00.000Z",
+        "pickupEnd": "2022-03-01T12:00:00.000Z",
+        "price": 2,
+        "originalPrice": 3,
+        "quantity": 10,
+        "distance": 1.2,
+        "favorite": false,
+        "store": {
+          "id": 3,
+          "name": "Dulce Gelato"
+        },
+        "reviews": {
+          "total": 204,
+          "average": 4.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "New in town",
+    "products": [
+      {
+        "id": 3,
+        "name": "Surprise bag",
+        "image": "https://picsum.photos/200/300",
+        "pickupStart": "2022-03-01T10:00:00.000Z",
+        "pickupEnd": "2022-03-01T12:00:00.000Z",
+        "price": 5,
+        "originalPrice": 7,
+        "quantity": 3,
+        "distance": 1.2,
+        "favorite": false,
+        "store": {
+          "id": 4,
+          "name": "Brisbane City"
+        },
+        "reviews": {
+          "total": 118,
+          "average": 4.3
+        }
+      }
+    ]
+  }
+]

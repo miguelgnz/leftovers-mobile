@@ -1,16 +1,19 @@
-import { View, Text } from "react-native";
+import { ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import DiscoverItem from "@/components/DiscoverItem";
+
+import discoverResponse from "@/mocks/discoverResponse.json";
 
 export default function Home() {
   const insets = useSafeAreaInsets();
 
-  console.log("Bottom inset:", insets.bottom, "Top inset:", insets.top);
   return (
-    <View
-      className={`flex-1 items-center justify-center`}
-      style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <ScrollView style={{ marginTop: insets.top, marginBottom: insets.bottom }}>
+      {discoverResponse.map((discoverItem) => {
+        return (
+          <DiscoverItem key={discoverItem.id} discoverItem={discoverItem} />
+        );
+      })}
+    </ScrollView>
   );
 }
