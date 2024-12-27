@@ -1,6 +1,6 @@
 import { Product } from "@/types/product";
 import React from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import ProductCard from "@/components/ProductCard";
 
 interface DiscoverItemProps {
@@ -15,15 +15,15 @@ export default function DiscoverItem({ discoverItem }: DiscoverItemProps) {
   return (
     <View className="flex gap-2 pl-2">
       <Text className="text-2xl">{discoverItem.name}</Text>
-      <ScrollView
+
+      <FlatList
+        data={discoverItem.products}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <ProductCard product={item} />}
         horizontal
         contentContainerStyle={styles.scrollView}
         showsHorizontalScrollIndicator={false}
-      >
-        {discoverItem.products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </ScrollView>
+      />
     </View>
   );
 }

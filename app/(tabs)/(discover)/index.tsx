@@ -1,4 +1,4 @@
-import { ScrollView } from "react-native";
+import { FlatList, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import DiscoverItem from "@/components/DiscoverItem";
 
@@ -8,12 +8,17 @@ export default function Home() {
   const insets = useSafeAreaInsets();
 
   return (
-    <ScrollView style={{ marginTop: insets.top, marginBottom: insets.bottom }}>
-      {discoverResponse.map((discoverItem) => {
-        return (
-          <DiscoverItem key={discoverItem.id} discoverItem={discoverItem} />
-        );
-      })}
-    </ScrollView>
+    <View
+      style={{
+        marginTop: insets.top,
+        marginBottom: insets.bottom,
+      }}
+    >
+      <FlatList
+        data={discoverResponse}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <DiscoverItem discoverItem={item} />}
+      />
+    </View>
   );
 }
