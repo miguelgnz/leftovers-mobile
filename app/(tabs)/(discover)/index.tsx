@@ -1,4 +1,4 @@
-import { FlatList, View } from "react-native";
+import { FlatList, TextInput, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import DiscoverItem from "@/components/DiscoverItem";
 
@@ -11,7 +11,6 @@ export default function Home() {
     <View
       style={{
         marginTop: insets.top,
-        marginBottom: insets.bottom,
       }}
     >
       <FlatList

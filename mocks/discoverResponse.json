@@ -6,7 +6,7 @@
       {
         "id": 1,
         "name": "Surprise bag",
-        "image": "https://picsum.photos/200/300",
+        "image": "https://picsum.photos/seed/picsum/200/300",
         "pickupStart": "2022-03-01T10:00:00.000Z",
         "pickupEnd": "2022-03-01T12:00:00.000Z",
         "price": 10,
@@ -52,7 +52,7 @@
       {
         "id": 2,
         "name": "Surprise bag",
-        "image": "https://picsum.photos/id/42/200/300",
+        "image": "https://picsum.photos/seed/picsum/200/300",
         "pickupStart": "2022-03-01T10:00:00.000Z",
         "pickupEnd": "2022-03-01T12:00:00.000Z",
         "price": 2,
@@ -78,7 +78,7 @@
       {
         "id": 3,
         "name": "Surprise bag",
-        "image": "https://picsum.photos/200/300",
+        "image": "https://picsum.photos/seed/picsum/200/300",
         "pickupStart": "2022-03-01T10:00:00.000Z",
         "pickupEnd": "2022-03-01T12:00:00.000Z",
         "price": 5,

@@ -14,7 +14,7 @@ interface DiscoverItemProps {
 export default function DiscoverItem({ discoverItem }: DiscoverItemProps) {
   return (
     <View className="flex gap-2 pl-2">
-      <Text className="text-2xl">{discoverItem.name}</Text>
+      <Text className="pl-2 text-2xl">{discoverItem.name}</Text>
 
       <FlatList
         data={discoverItem.products}
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   scrollView: {
     paddingHorizontal: 5,
     gap: 20,
-    paddingTop: 5,
+    // paddingTop: 5,
     paddingBottom: 25,
   },
 });
